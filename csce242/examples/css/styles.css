@@ -1,0 +1,42 @@
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(images/tre.webp);
+    background-size: cover;
+}
+
+#content {
+    background-color: purple;
+    width: 70%;
+    margin: auto; /*Center*/
+    padding: 1%;
+    border-radius:5px; /* round corners */
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+
+td,th {
+    border: 1px solid black;
+    padding: 5px 10px; /*top and bottom 5, right and left 10 */
+}
+
+th {
+    background: magenta;
+    color: brown;
+}
+
+/* Images */
+#sealpic {
+    box-shadow: 10px 10px beige;
+}
+
+/* Typography */
+h1 {
+    color: crimson;
+}
+h2 {
+    color: aqua;
+}

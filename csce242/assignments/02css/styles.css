@@ -1,0 +1,60 @@
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background: #F5F1E3 url("images/savanna.jpg") center/cover no-repeat fixed;;
+    color: #2E5339;
+    margin: 0;
+    padding: 2rem;
+  }
+  
+  h1 {
+    color: #2E5339;
+  }
+  h2 {
+    color: #7BA05B;
+  }
+  p {
+    color: #2E5339;
+  }
+  
+  #pictures {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #elephant1 {
+    max-width: 300px;
+    height: auto;
+    border: 2px solid #CBB67C;
+    padding: 2px;
+    background-color: white;
+  }
+  #elephant2 {
+    max-width: 239px;
+    height: auto;
+    border: 2px solid #CBB67C;
+    padding: 2px;
+    background-color: white;
+  }
+  
+  #facts-table {
+    border-collapse: collapse;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  #facts-table th {
+    border: 1px solid #CBB67C;
+    padding: 6px 10px;
+    background-color: #BFA86E
+  }
+  #facts-table td {
+    border: 1px solid #CBB67C;
+    padding: 6px 10px;
+    background-color: #BFA86E
+  }
+  
+  #facts-table th {
+    background-color: #CBB67C;
+    color: #2E5339;
+  }
+  

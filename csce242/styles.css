@@ -1,0 +1,37 @@
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-color: #F5F1E3;
+    margin: 0;
+    padding: 2rem;
+    color: #2E5339;
+  }
+  
+  h1 {
+    color: #2E5339;
+    margin-top: 0;
+  }
+  h2 {
+    color: #7BA05B;
+  }
+  p {
+    color: #2E5339;
+  }
+
+  #assignments a {
+    text-decoration: none;
+    color: #7BA05B;
+    font-weight: bold;
+  }
+  #assignments a:hover {
+    color: #8B6B4A;
+  }
+  
+  #repo-link {
+    text-decoration: none;
+    color: #7BA05B;
+    font-weight: bold;
+  }
+  #repo-link:hover {
+    color: #8B6B4A;
+  }
+  
