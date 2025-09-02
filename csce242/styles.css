@@ -83,6 +83,15 @@ h2 {
   border-bottom-color: #3c7c3f;
 }
 
+.site-footer {
+  margin-top: 24px;
+  padding: 16px 0;
+  border-top: 1px solid #d5e3d9;
+  text-align: center;
+  color: #2E5339;
+  font-size: 0.95rem;
+}
+
 @media only screen and (min-width: 768px) {
   .container { width: 90%; }
   .assignments {
