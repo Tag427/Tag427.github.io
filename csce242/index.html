@@ -5,20 +5,85 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div>
-      <h1>CSCE 242: Tag McVey</h1>
-      <p>
-        CSCE 242 is an introduction to web design as well as client-server
-        computing and and applications.
-      </p>
-      <p>
-        <a id="repo-link" href="https://tag427.github.io/csce242">Github</a>
-      </p>
+    <header class="site-header">
+      <div class="container">
+        <h1>CSCE 242: Client-Server Computing</h1>
+        <p class="tagline">Intro to web design and client-server computing.</p>
+        <div class="Primary">
+          <a id="repo-link" href="https://tag427.github.io/csce242"
+            >GitHub Repo</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
       <h2>Assignments</h2>
-      <ul id="assignments">
-        <li><a href="assignments/01html/index.html">Basic HTML</a></li>
-        <li><a href="assignments/02css/index.html">Basic CSS</a></li>
-      </ul>
-    </div>
+
+      <section class="assignments">
+        <article class="card">
+          <h3>Assignment 1 - Basic HTML</h3>
+
+          <a class="card-thumb" href="assignments/01html/index.html">
+            <img
+              src="images/page1.png"
+              alt="Screenshot of Assignment 1 page"
+              width="300"
+              height="150"
+            />
+          </a>
+
+          <p class="card-desc">
+            Built a simple HTML page using headings, lists, and links about the
+            Dutch Formula 1 grand prix.
+          </p>
+
+          <a class="card-link" href="assignments/01html/index.html">
+            View assignment
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>Assignment 2 - Basic CSS</h3>
+
+          <a class="card-thumb" href="assignments/02css/index.html">
+            <img
+              src="images/page2.png"
+              alt="Screenshot of Assignment 2 page"
+              width="300"
+              height="150"
+            />
+          </a>
+
+          <p class="card-desc">
+            Styled the HTML page with external CSS: colors, fonts, spacing, and
+            hover states. Used an elephant theme for this assignment.
+          </p>
+
+          <a class="card-link" href="assignments/02css/index.html">
+            View assignment
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>Assignment 3 - Page Layout</h3>
+
+          <a class="card-thumb" href="#">
+            <img
+              src="images/placeholder.png"
+              alt="Screenshot of Assignment 3 page"
+              width="300"
+              height="150"
+            />
+          </a>
+
+          <p class="card-desc">
+            <!--Placeholder for description once assignment 3 is done-->
+          </p>
+
+          <a class="card-link" href="#"> View assignment </a>
+        </article>
+      </section>
+    </main>
   </body>
 </html>

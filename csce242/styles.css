@@ -1,37 +1,97 @@
 body {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    background-color: #F5F1E3;
-    margin: 0;
-    padding: 2rem;
-    color: #2E5339;
-  }
-  
-  h1 {
-    color: #2E5339;
-    margin-top: 0;
-  }
-  h2 {
-    color: #7BA05B;
-  }
-  p {
-    color: #2E5339;
-  }
+  background: #F5F1E3;
+  color: #2E5339;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
 
-  #assignments a {
-    text-decoration: none;
-    color: #7BA05B;
-    font-weight: bold;
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+h1 {
+  margin: 24px 0 6px;
+}
+
+.tagline {
+  margin: 0 0 12px;
+}
+
+#repo-link {
+  color: #2E5339;
+  text-decoration: none;
+  font-weight: bold;
+}
+#repo-link:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  color: #2E5339;
+  margin: 16px 4px;
+}
+
+.assignments {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+}
+
+.card {
+  background: #EAF1E8;
+  border: 1px solid #d5e3d9;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card h3 {
+  margin: 0 0 8px 0;
+  color: #2E5339;
+}
+
+.card-thumb {
+  display: block;
+  border: 1px solid #d9e3da;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 8px 0 12px 0;
+}
+
+.card-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card-desc {
+  margin: 0 0 12px 0;
+}
+
+.card-link {
+  display: inline-block;
+  color: #3c7c3f;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+.card-link:hover {
+  border-bottom-color: #3c7c3f;
+}
+
+@media only screen and (min-width: 768px) {
+  .container { width: 90%; }
+  .assignments {
+     display: flex;
+     flex-wrap: wrap; 
   }
-  #assignments a:hover {
-    color: #8B6B4A;
+  .assignments .card {
+    max-width: none;
+    flex: 0 0 calc(33.333% - 16px);
+    width: calc(33.333% - 16px);
   }
-  
-  #repo-link {
-    text-decoration: none;
-    color: #7BA05B;
-    font-weight: bold;
-  }
-  #repo-link:hover {
-    color: #8B6B4A;
-  }
-  
+}
