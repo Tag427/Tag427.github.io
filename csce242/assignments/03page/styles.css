@@ -1,15 +1,14 @@
 body {
     background: #F7F7F7;
-    color: #000; /* body text color */
+    color: #000;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
   }
   
   .container { width: 96%; margin: 0 auto; }
   
-  /* Header */
   #main-header {
-    background: #111111; /* dark header */
+    background: #111111;
     color: #fff;
     text-align: center;
     padding: 12px 0;
@@ -17,25 +16,21 @@ body {
   #main-header h1 { margin: 0 0 4px; }
   .tagline { margin: 0; }
   
-  /* ===== Nav (full-width red bar) ===== */
-  #main-nav { background: #D32F2F; } /* Ferrari red */
+  #main-nav { background: #D32F2F; }
   #main-nav .container { width: 100%; margin: 0; padding: 0; }
   #main-nav ul { list-style: none; padding-left: 0; margin: 0; }
   #main-nav li { border-bottom: 1px solid rgba(255,255,255,.8); }
-  #main-nav li:first-child { border-top: 1px solid rgba(255,255,255,.8); }
   #main-nav a {
     color: #fff; text-decoration: none; display: block; padding: 10px 12px;
   }
   #main-nav a:hover { background: #fff; color: #D32F2F; }
   
-  /* -------- TOP (ideas) — NO panel background -------- */
   #ideas {
-    background: transparent; /* no colored panel */
+    background: transparent;
     border: none;
     padding: 0;
     margin: 14px 0;
   }
-  /* (no .col styles needed on mobile) */
   
   .idea {
     background: #fff;
@@ -45,23 +40,20 @@ body {
     margin-bottom: 14px;
     display: flex;
     align-items: flex-start;
-    /* no gap; spacing handled by image margin-right */
   }
   .tall-img {
     width: 200px; 
-    height: 400px;            /* keep the “tall” cue */
+    height: 400px;
     display: block;
-    margin-right: 12px;       /* replaces gap */
+    margin-right: 12px;
     border: 1px solid #ccc;
-    /* no object-fit */
   }
   .idea-text { flex: 1; }
   .idea h2 { margin: 0 0 8px; color: #111111; }
   
-  /* -------- BOTTOM (sidebar + grid) -------- */
   #links-and-grid { margin: 16px 0; }
   .links {
-    background: #D32F2F;  /* red */
+    background: #D32F2F;
     color: #fff;
     padding: 12px;
     border-radius: 6px;
@@ -72,25 +64,22 @@ body {
   .links li { margin: 6px 0; }
   .links a { color: #fff; text-decoration: underline; }
   
-  /* Grid */
   .grid { 
     display: flex; 
     flex-wrap: wrap; 
-    /* no gap */ 
   }
   
-  /* Base tile */
   .tile {
     border-radius: 6px;
     padding: 10px;
     width: 100%;
-    /* no box-sizing */
-    margin: 4px;             /* spacing replaces gap */
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    margin: 8px 0;
   }
   .tile h4 { margin: 0 0 8px; text-align: center; }
-  .tile p  { margin: 0; }
-  
-  /* Title tiles — black with white text; image ~200x100 */
+
   .tile.title {
     background: #000000;
     color: #ffffff;
@@ -100,27 +89,21 @@ body {
     width: 100%;
     height: 100px;
     display: block;
-    border: 1px solid rgb(82, 82, 82); /* dark border */
     margin-bottom: 8px;
-    /* no object-fit */
   }
   
-  /* Gallery tiles — dark gray with white text; image ~200x50 */
   .tile.gallery {
     background: #272727;
-    color: #ffffff; /* white text on dark gray */
+    color: #ffffff;
   }
   .tile.gallery h4 { color: #ffffff; }
   .tile.gallery img {
     width: 100%;
     height: 50px;
     display: block;
-    border: 1px solid rgba(0,0,0,.15);
     margin-bottom: 8px;
-    /* no object-fit */
   }
   
-  /* Footer */
   #main-footer {
     background: #111111;
     color: #fff;
@@ -130,38 +113,39 @@ body {
   }
   
   /* -------- Larger screens -------- */
-  @media only screen and (min-width: 900px) {
+  @media only screen and (min-width: 768px) {
     .container { width: 98%; }
   
-    /* horizontal nav */
     #main-nav ul { display: flex; }
     #main-nav li { flex: 1; border: none; border-right: 1px solid rgba(255,255,255,.7); }
     #main-nav li:last-child { border-right: none; }
     #main-nav a { text-align: center; padding: 8px; }
     #main-nav a:hover { background: #D32F2F; color: #fff; border-bottom: 2px solid #fff; }
   
-    /* top section: two columns (left has 2 cards; right has 1) */
     #ideas { display: flex; }
     #ideas .left-col, 
     #ideas .right-col { flex: 1; }
-    #ideas .left-col  { margin-right: 8px; }   /* replaces gap */
-    #ideas .right-col { margin-left: 8px; }    /* replaces gap */
+    #ideas .left-col  { margin-right: 8px; }
+    #ideas .right-col { margin-left: 8px; }
   
-    /* sidebar + grid */
     #links-and-grid { display: flex; align-items: stretch; }
-    .links { width: 260px; margin-bottom: 0; margin-right: 16px; }
+    .links { width: 260px; margin-bottom: 0; margin-right: 10px; }
     .grid  { flex: 1; }
   
-    /* 5 columns per row; simple flex-basis and margins (no calc) */
     .tile { 
-      flex: 1 1 20%;   /* target ~20% each */
-      /* keep the margin: 4px above for spacing */
+      flex: 0 0 17.5%;
+      margin: 0.2%;
     }
   }
   
-  /* -------- Small screens -------- */
-  @media only screen and (max-width: 899px) {
+ /* -------- Small screens -------- */
+@media only screen and (max-width: 767px) {
     .idea { flex-direction: column; }
-    .tall-img { width: 100%; height: auto; } /* let tall image shrink naturally on phones */
+    .tall-img { width: 100%; height: auto; }
+  
+    .grid { display: flex; flex-wrap: wrap; }
+    .tile.title   { order: 0; }
+    .tile.gallery { order: 1; }
   }
+  
   
