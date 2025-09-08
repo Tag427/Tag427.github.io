@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CSCE 242: Tag McVey</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -9,21 +11,26 @@
       <div class="container">
         <h1>CSCE 242: Client-Server Computing</h1>
         <p class="tagline">Intro to web design and client-server computing.</p>
-        <div class="Primary">
-          <a id="repo-link" href="https://tag427.github.io/csce242"
-            >GitHub Repo</a
-          >
-        </div>
+        <nav class="top-nav">
+          <ul>
+            <li><a href="#assignments">Assignments</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li>
+              <a id="repo-link" href="https://tag427.github.io/csce242"
+                >GitHub Repo</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
     <main class="container">
-      <h2>Assignments</h2>
-
-      <section class="assignments">
+      <!-- Assignments -->
+      <h2 id="assignments">Assignments</h2>
+      <section class="cards-grid" aria-label="Assignments list">
         <article class="card">
-          <h3>Assignment 1 - Basic HTML</h3>
-
+          <h3>Assignment 1 — Basic HTML</h3>
           <a class="card-thumb" href="assignments/01html/index.html">
             <img
               src="images/page1.png"
@@ -32,20 +39,17 @@
               height="150"
             />
           </a>
-
           <p class="card-desc">
             Built a simple HTML page using headings, lists, and links about the
             Dutch Formula 1 grand prix.
           </p>
-
-          <a class="card-link" href="assignments/01html/index.html">
-            View assignment
-          </a>
+          <a class="card-link" href="assignments/01html/index.html"
+            >View Assignment</a
+          >
         </article>
 
         <article class="card">
-          <h3>Assignment 2 - Basic CSS</h3>
-
+          <h3>Assignment 2 — Basic CSS</h3>
           <a class="card-thumb" href="assignments/02css/index.html">
             <img
               src="images/page2.png"
@@ -54,21 +58,18 @@
               height="150"
             />
           </a>
-
           <p class="card-desc">
             Styled the HTML page with external CSS: colors, fonts, spacing, and
             hover states. Used an elephant theme for this assignment.
           </p>
-
-          <a class="card-link" href="assignments/02css/index.html">
-            View assignment
-          </a>
+          <a class="card-link" href="assignments/02css/index.html"
+            >View Assignment</a
+          >
         </article>
 
         <article class="card">
-          <h3>Assignment 3 - Page Layout</h3>
-
-          <a class="card-thumb" href="#">
+          <h3>Assignment 3 — Page Layout</h3>
+          <a class="card-thumb" href="assignments/03page/index.html">
             <img
               src="images/page3.png"
               alt="Screenshot of Assignment 3 page"
@@ -76,16 +77,37 @@
               height="150"
             />
           </a>
-
           <p class="card-desc">
             Created an F1 themed page using the page layout requirements. Used
             flexboxes and the media queries to help acheieve the desired look
             for the page.
           </p>
+          <a class="card-link" href="assignments/03page/index.html"
+            >View Assignment</a
+          >
+        </article>
+      </section>
 
-          <a class="card-link" href="assignments/03page/index.html">
-            View assignment
-          </a>
+      <!-- Projects -->
+      <h2 id="projects">Projects</h2>
+      <section class="cards-grid">
+        <!-- Project Part 1 -->
+        <article class="card">
+          <h3>Project Part 1 — Topic</h3>
+          <p class="card-desc">This covers the website topic</p>
+          <a
+            class="card-link"
+            href="projects/part1/CSCE 242_ Topic Selection.pdf"
+            >Open Project Part 1</a
+          >
+        </article>
+
+        <article class="card">
+          <h3>Project Part 2 — Wireframe</h3>
+          <p class="card-desc">This has the wireframe for the website.</p>
+          <a class="card-link" href="projects/part2/index.html"
+            >Open Project Part 2</a
+          >
         </article>
       </section>
     </main>
