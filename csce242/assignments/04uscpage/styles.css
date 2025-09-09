@@ -1,0 +1,168 @@
+:root {
+  --garnet: #73000a;
+  --black: #000;
+  --white: #fff;
+  --light: #f2f2f2;
+  --dark: #111;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  background: #fff;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+.container { width: 95%; margin: 0 auto; }
+
+/* Utility */
+.utility { background: var(--black); color: var(--white); }
+.util-links {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.util-links li a {
+  color: #fff;
+  padding: 8px 10px;
+  display: block;
+}
+.util-links li a:hover { text-decoration: underline; }
+
+/* Primary Nav */
+.primary { background: var(--garnet); color: var(--white); }
+.primary-list { padding: 0; margin: 0; list-style: none; }
+.primary-list a {
+  color: #fff;
+  display: block;
+  padding: 10px 6px;
+  text-align: center;
+}
+.primary-list a:hover {
+  background: #5a0008;
+}
+.hero { position: relative; background: #000; }
+.hero img { width: 100%; }
+.hero-title {
+  background: rgba(255,255,255,0.9);
+  padding: 10px 14px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  max-width: 90%;
+}
+.hero-title h1 { margin: 0; color: var(--garnet); }
+
+/* Intro */
+.intro { padding: 20px 0; }
+.intro p { margin: 0; text-align: center; }
+
+/* Prepared */
+.prepared { background: var(--garnet); color: #fff; padding: 10px 0; }
+.prepared-text { padding: 10px; }
+.prepared-media { padding: 10px; }
+.prepared .btn { background: #000; border: 2px solid #fff; }
+
+/* Programs */
+.programs { background: var(--light); padding: 20px 0; text-align: center; }
+.programs h2 { margin: 0 0 6px; color: var(--garnet); }
+.programs p { margin: 0 0 10px; }
+.actions { margin-top: 10px; }
+
+/* Research */
+.research { background: #000; color: #fff; }
+.research-wrap { position: relative; }
+.research-wrap img { width: 100%; opacity: 0.95; }
+.research-card {
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  padding: 12px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  max-width: 92%;
+}
+
+/* News */
+.news { background: #fff; padding: 20px 0; }
+.news h2 { margin: 0 0 10px; text-align: center; color: var(--garnet); }
+
+.wrap { flex-wrap: wrap; }
+
+.news-cards { gap: 10px; }
+.news-card {
+  background: #f8f8f8;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+}
+.news-card img { width: 100%; }
+.news-card h3 { margin: 8px 0 6px; font-size: 1.05rem; }
+.news-card h3 a { text-decoration: underline; color: inherit; }
+.news-card p { margin: 0 0 10px; color: #333; }
+
+.news-actions { text-align: center; margin-top: 12px; }
+
+
+/* Quote band */
+.quote { background: var(--garnet); color: #fff; padding: 16px 0; }
+.quote-photo { padding: 6px; }
+.quote-text { padding: 6px; }
+
+/* Connections */
+.connections { background: #2f5560; color: #fff; padding: 10px 0; }
+.connections-text, .connections-media { padding: 10px; }
+
+/* CTA */
+.cta { background: #000; color: #fff; padding: 10px 0; }
+.cta-text, .cta-media { padding: 10px; }
+
+/* College strip */
+.college-strip { background: #eee; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: 10px 0; }
+.college-link { color: var(--garnet); font-weight: bold; }
+.strip-actions { text-align: right; }
+
+/* Footer */
+#site-footer { background: var(--garnet); color: #fff; }
+#site-footer .plain { list-style: none; padding-left: 0; margin: 8px 0; }
+#site-footer .plain li { margin: 4px 0; }
+#site-footer a { color: #fff; text-decoration: underline; }
+.legal { background: #111; color: #ddd; margin-top: 10px; }
+.legal-links { list-style: none; padding-left: 0; margin: 0; display: flex; gap: 10px; }
+.legal-links a { color: #ddd; text-decoration: underline; }
+
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  background: var(--garnet);
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  margin-right: 6px;
+}
+.btn:hover { opacity: 0.9; }
+.btn-light { background: #fff; color: #000; border-color: #fff; }
+.btn-outline { background: transparent; color: #000; border-color: #000; }
+
+/* Columns */
+.columns { display: block; }
+.one, .two, .three { width: 100%; }
+
+/* Larger screens */
+@media only screen and (min-width: 768px) {
+  .container { width: 70%; }
+
+  .columns { display: flex; gap: 10px; }
+  .one { flex: 1; }
+  .two { flex: 2; }
+  .three { flex: 3; }
+
+  .primary-list li { flex: 1; }
+
+  .hero-title { left: 20px; bottom: 20px; max-width: 60%; }
+
+  .news-card { flex: 1; }
+}
