@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Assignment 5 — Introduction to JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Assignment 5</h1>
+      <h2 class="subtitle">Introduction to JavaScript</h2>
+    </header>
+
+    <main class="grid-3">
+      <!-- Sunny Times -->
+      <section class="panel" id="sunny-panel">
+        <h2>Sunny Times</h2>
+        <div id="lyrics"></div>
+      </section>
+
+      <!-- Select a Color -->
+      <section class="panel" id="color-panel">
+        <h2>Select A Color</h2>
+        <input type="color" id="color-input" value="#ff0000" />
+        <p id="color-preview">This text changes to your selected color.</p>
+        <p id="color-code">#ff0000</p>
+      </section>
+
+      <!-- Image Change -->
+      <section class="panel" id="image-panel">
+        <h2>Image Change</h2>
+        <img
+          id="weather-img"
+          src="images/cloudy.png"
+          alt="Cloudy sky"
+          width="360"
+          height="240"
+        />
+      </section>
+    </main>
+
+    <footer>
+      <p>2025 Tag McVey • CSCE 242</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

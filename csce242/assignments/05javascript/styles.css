@@ -1,0 +1,95 @@
+/* Start CSS copied from my CSCE 242 homepage styles */
+
+body {
+    background: #f5f1e3;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background: #2b91ad;
+    color: white;
+  }
+  
+  .subtitle {
+    color: salmon;
+    margin-top: 6px;
+  }
+  
+  footer {
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+  }
+  
+  .grid-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  @media (min-width: 800px) {
+    .grid-3 {
+      flex-direction: row;
+    }
+  }
+  
+  .panel {
+    background: #eaf1e8;
+    border: 1px solid #d5e3d9;
+    border-radius: 8px;
+    padding: 16px;
+    flex: 1;
+  }
+  
+  .panel h2 {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .panel-dots {
+    text-align: right;
+    color: #6a8b78;
+  }
+  
+  #lyrics {
+    min-height: 200px;
+    border: 1px solid #d5e3d9;
+    border-radius: 6px;
+    padding: 8px;
+  }
+  
+  #lyrics p {
+    margin: 4px 0;
+  }
+  
+  #color-input {
+    display: block;
+    margin-bottom: 12px;
+    width: 60px;
+    height: 40px;
+  }
+  
+  #color-preview {
+    border: 1px solid #d5e3d9;
+    border-radius: 6px;
+    padding: 8px;
+  }
+  
+  #color-code {
+    font-family: monospace;
+    margin: 8px 0 0;
+  }
+
+  #weather-img {
+    display: block;
+    max-width: 100%;
+    border: 1px solid #d5e3d9;
+    border-radius: 6px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  
