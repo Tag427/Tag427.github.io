@@ -1,0 +1,93 @@
+/* Used my assignment 5 as styling inspisration for the CSS*/
+:root{
+    --bg:#f5f1e3;
+    --primary:#2b91ad;
+    --accent:#ffb58a;
+    --panel:#ffffff;
+    --border:#d5e3d9;
+    --muted:#6a8b78;
+  }
+  
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--bg);
+    color:#143b4a;
+    text-align:center;
+  }
+  
+  header{
+    background:var(--primary);
+    color:#fff;
+    padding:20px 12px 12px;
+  }
+  .subtitle{ color:salmon; margin:6px 0 0 }
+  
+  #menu{ margin-top:10px }
+  #toggle-btn{
+    background:none;
+    border:none;
+    font-size:20px;
+    color:#fff;
+    cursor:pointer;
+  }
+  #nav-list{
+    list-style:none;
+    padding:0;
+    margin:10px 0 0;
+  }
+  #nav-list li{ margin:6px 0 }
+  #nav-list a{
+    text-decoration:none;
+    color:var(--primary);
+    background:#fff;
+    padding:6px 10px;
+    border-radius:6px;
+    display:inline-block;
+    font-weight:bold;
+    cursor:pointer;
+  }
+  .hidden{ display:none }
+  
+  #card{
+    max-width:720px;
+    margin:20px auto;
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:20px;
+  }
+  .exercise img{ display:block; margin:12px auto 0 }
+  .muted{ color:var(--muted); margin:8px 0 }
+  .time{ font-size:1.8rem; margin:8px 0 }
+
+  .box{
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:16px;
+    margin:12px auto;
+  }
+  .label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:8px;
+  }
+  
+  @media (min-width:800px){
+    #toggle-btn{ display:none }
+    #nav-list{ 
+      display:flex !important; 
+      justify-content:center; 
+      gap:12px;
+      margin-top:6px;
+    }
+    #nav-list li{ margin:0 }
+    #nav-list li:not(:last-child)::after{
+      content:"|";
+      margin-left:12px;
+      color:#e9eef0;
+      font-weight:normal;
+    }
+  }
+  
