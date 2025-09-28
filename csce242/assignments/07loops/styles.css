@@ -1,0 +1,112 @@
+/* Used my assignment 6 as styling inspisration for the CSS*/
+:root{
+  --sky-day:#bfe0ed;
+  --sky-night:#000000;
+  --cloud:#f1f1f1;
+  --cloud2:#ffffff;
+  --sun:#ffd34d;
+  --moon:#fff2c6;
+  --leaf:#2d8b3a;
+  --trunk:#8b5a2b;
+  --card-border:#d5e3d9;
+  --page-bg:#f5f1e3;
+}
+
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align:center;
+  background:var(--page-bg);
+  color:#133b4a;
+}
+
+header{
+  background:#2b91ad;
+  color:#fff;
+  padding:20px 12px 12px;
+}
+.subtitle{ color:salmon; margin:6px 0 10px; }
+#btn-draw{
+  border:1px solid #fff;
+  background:#fff;
+  color:#2b91ad;
+  font-weight:bold;
+  padding:6px 10px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+#scene{
+  position:relative;
+  max-width:1500px;
+  height:400px;
+  margin:20px auto;
+  border-radius:12px;
+  overflow:hidden;
+}
+
+#scene.day{ background:var(--sky-day); }
+#scene.night{ background:var(--sky-night); }
+
+.sun, .moon{
+  position:absolute;
+  top:22px;
+  right:24px;
+  width:90px;
+  height:90px;
+  border-radius:50%;
+}
+.sun{ background:var(--sun); box-shadow:0 0 0 10px rgba(255,211,77,.18); }
+.moon{ background:var(--moon); }
+.moon::after{
+  content:"";
+  position:absolute;
+  right:-10px; top:0;
+  width:90px; height:90px;
+  border-radius:50%;
+  background:var(--sky-night);
+}
+
+.cloud{
+  position:absolute;
+  top:170px;
+  width:110px; height:45px;
+  background:var(--cloud);
+  border-radius:40px;
+}
+.cloud::before, .cloud::after{
+  content:"";
+  position:absolute;
+  border-radius:50%;
+  background:var(--cloud2);
+}
+.cloud::before{ width:56px; height:56px; left:10px; top:-28px; }
+.cloud::after { width:70px; height:70px; left:46px; top:-36px; }
+
+.tree{
+  position:absolute;
+  bottom:24px;
+  width:72px; height:98px;
+}
+.tree .canopy{
+  width:72px; height:72px;
+  border-radius:50%;
+  background:var(--leaf);
+  margin:0 auto;
+}
+.tree .trunk{
+  width:16px; height:38px;
+  background:var(--trunk);
+  border-radius:4px;
+  margin: -6px auto 0;
+}
+
+@media (max-width: 570px){
+  .sun, .moon{ width:70px; height:70px; }
+  .cloud{ width:92px; height:38px; }
+  .cloud::before{ width:46px; height:46px; left:8px; top:-22px; }
+  .cloud::after { width:58px; height:58px; left:40px; top:-28px; }
+  .tree{ width:64px; height:90px; }
+  .tree .canopy{ width:64px; height:64px; }
+}
