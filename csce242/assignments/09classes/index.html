@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Assignment 9 — Classes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Assignment 9</h1>
+      <h2 class="subtitle">Classes</h2>
+    </header>
+
+    <main class="container">
+      <p class="credit">
+        All images from
+        <a href="https://www.formula1.com/" target="_blank" rel="noopener"
+          >Formula</a
+        >
+        <a href="https://www.mclaren.com/racing/" target="_blank" rel="noopener"
+          >McLaren</a
+        >
+        <a
+          href="https://www.ferrari.com/en-EN/formula1"
+          target="_blank"
+          rel="noopener"
+          >Ferrari</a
+        >
+        <a href="https://www.redbullracing.com/" target="_blank" rel="noopener"
+          >Red Bull</a
+        >
+        <a href="https://www.mercedesamgf1.com/" target="_blank" rel="noopener"
+          >Mercedes</a
+        >
+      </p>
+
+      <section id="gallery" class="grid"></section>
+    </main>
+
+    <section id="modal" class="modal hidden" aria-hidden="true">
+      <div
+        class="modal-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <div class="modal-header">
+          <h3 id="modal-title"></h3>
+          <button id="btn-close" class="close" aria-label="Close popup">
+            &#10006;
+          </button>
+        </div>
+        <p id="modal-artist" class="artist"></p>
+        <div id="image-wrap">
+          <!-- This is blank because it is injected using the script.js -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>2025 Tag McVey • CSCE 242</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

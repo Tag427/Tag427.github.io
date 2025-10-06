@@ -1,0 +1,151 @@
+/* I used the CSS from my previous assignments again as reference for this one too */
+:root{
+  --page-bg:#f5f1e3;
+  --panel:#ffffff;
+  --accent:#e58f96;
+  --text:#24333a;
+  --muted:#7a8a91;
+  --border:#d9c1c1;
+  --shadow:0 14px 30px rgba(0,0,0,.10);
+}
+
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  color:var(--text);
+  background:var(--page-bg);
+  line-height:1.5;
+  text-align:center;
+}
+
+.site-header{
+  background:#2b91ad;
+  color:#fff;
+  padding:20px 10px 16px;
+}
+.subtitle{ margin:6px 0 0; color:salmon; }
+
+.container{ width:92%; max-width:1100px; margin:14px auto 30px; }
+
+.credit{ color:var(--muted); margin:8px 0 18px; }
+.credit a{ color:inherit; }
+
+.grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:18px;
+}
+@media (min-width:900px){
+  .grid{ grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Cards */
+.card{
+  background:var(--panel);
+  border:4px solid var(--accent);
+  border-radius:14px;
+  box-shadow: var(--shadow);
+  overflow:hidden;
+  cursor:pointer;
+  position:relative;
+}
+.card img{
+  display:block;
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+.card .title{
+  font-weight:700;
+  padding:10px 12px;
+}
+.card .overlay{
+  position:absolute;
+  left:0; right:0; bottom:0;
+  background:var(--accent);
+  color:#fff;
+  padding:8px 10px;
+  opacity:0;
+  transform: translateY(6px);
+  transition: all .15s ease-in;
+  font-weight:700;
+}
+.card:hover .overlay{ opacity:1; transform: translateY(0); }
+
+/* Modal */
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.5);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:16px;
+  z-index:10;
+}
+.hidden{ display:none; }
+
+.modal-card{
+  width:min(92vw, 700px);
+  background:#fff;
+  border:4px solid var(--accent);
+  border-radius:14px;
+  box-shadow: 0 22px 44px rgba(0,0,0,.28);
+  text-align:left;
+  overflow:hidden;
+}
+.modal-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px 14px;
+  border-bottom:1px solid var(--border);
+  color:#c66b73;
+}
+.close{
+  background:transparent;
+  border:0;
+  cursor:pointer;
+  font-size:18px;
+  padding:4px 6px;
+}
+.artist{
+  margin:10px 14px 0;
+  color:var(--muted);
+}
+
+#image-wrap{
+  padding:14px;
+}
+
+.modal-img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+/* Border when true */
+.frame {
+  display: inline-block;
+  border: 6px solid black;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+
+
+/* Footer */
+.site-footer{ color:#6b7e82; margin:20px 0 26px; }

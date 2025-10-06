@@ -76,9 +76,7 @@ img{ max-width:100%; height:auto; display:block; }
 }
 .top-nav a:hover{ border-bottom-color:var(--link-underline); }
 
-.top-nav a.is-active {
-  border-bottom-color: var(--link-underline);
-}
+.top-nav a.is-active{ border-bottom-color:var(--link-underline); }
 
 .nav-toggle{
   display:none;
